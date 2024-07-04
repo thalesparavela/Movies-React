@@ -5,8 +5,8 @@ export function Header() {
   return (
     <Container>
       <h1>RocketMovies</h1>
-      <Input placeholder="Pesquisar pelo titúlo" />
-      <div class="profile">
+      <Input placeholder="Pesquisar pelo título" />
+      <div className="profile">
         <div>
           <h2>Thales Paravela</h2>
           <ButtonText title={'sair'} />

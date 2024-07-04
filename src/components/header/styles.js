@@ -3,6 +3,8 @@ import styled from 'styled-components';
 export const Container = styled.div`
   display: grid;
   align-items: center;
+  padding-left: 123px;
+  padding-right: 123px;
   height: 116px;
   grid-template-columns: 1fr 2fr 1fr;
   gap: 64px;
@@ -15,6 +17,7 @@ export const Container = styled.div`
     width: 100%;
   }
   > h1 {
+
     color: ${({ theme }) => theme.COLORS.PINK};
     font-size: 24px;
   }
@@ -26,14 +29,14 @@ export const Container = styled.div`
   }
 
   .profile {
-    width: auto;
+    width: 198px;
     display: flex;
     align-items: center;
     gap: 9px;
     > div {
       display: flex;
       flex-direction: column;
-      align-items: end;
+      align-items: flex-end;
     }
     > img {
       width: 64px;
