@@ -11,8 +11,7 @@ export const Container = styled.button`
   align-items: center;
   font-size: 16px;
   font-weight: 500;
-
-  &:disabled{
-    opacity: 0.5;
+  .icon {
+    color: ${({ theme }) => theme.COLORS.GRAY_BUTTON};
   }
 `;

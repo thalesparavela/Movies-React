@@ -8,6 +8,9 @@ export const Container = styled.div`
   padding: 32px;
   gap: 16px;
   color: ${({ theme }) => theme.COLORS.WHITE};
+  > h1 {
+    font-size: 24px;
+  }
   > p {
     text-align: justify;
     overflow: hidden;

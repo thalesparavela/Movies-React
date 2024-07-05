@@ -7,7 +7,25 @@ export default createGlobalStyle`
   padding: 0;
   box-sizing: border-box;
 }
+
+html{
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  min-height: 100%;
+  scroll-behavior: smooth;
+
+}
+#root{
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
 body{
+
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
   background-color: ${({ theme }) => theme.COLORS.BACKGROUND_900};
   color:${({ theme }) => theme.COLORS.WHITE};
   -webkit-font-smoothing: antialiased;

@@ -1,14 +1,14 @@
 import styled from 'styled-components';
 
-export const Container = styled.div`
-  display: grid;
+export const Container = styled.header`
+  display: flex;
   align-items: center;
-  padding-left: 123px;
-  padding-right: 123px;
+  padding-left: 124px;
+  padding-right: 124px;
   height: 116px;
-  grid-template-columns: 1fr 2fr 1fr;
   gap: 64px;
-  justify-items: center;
+  background-color: ${({ theme }) => theme.COLORS.BACKGROUND_900};
+
   border-bottom: 2px solid ${({ theme }) => theme.COLORS.BACKGROUND_800};
   > div {
     display: flex;
@@ -17,7 +17,7 @@ export const Container = styled.div`
     width: 100%;
   }
   > h1 {
-
+    justify-content: start;
     color: ${({ theme }) => theme.COLORS.PINK};
     font-size: 24px;
   }
@@ -29,11 +29,13 @@ export const Container = styled.div`
   }
 
   .profile {
-    width: 198px;
     display: flex;
+    width: 198px;
     align-items: center;
+    justify-content: flex-end;
     gap: 9px;
     > div {
+      width: 198px;
       display: flex;
       flex-direction: column;
       align-items: flex-end;
