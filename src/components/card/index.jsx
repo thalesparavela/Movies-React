@@ -1,19 +1,11 @@
 import { Container, Tag } from './styles';
-import { FiStar } from 'react-icons/fi';
-import { AiFillStar } from 'react-icons/ai';
-
+import { Stars } from '../stars';
 export function Card({ ranking = 1, title, tags, description }) {
   return (
     <Container>
       <h1>{title}</h1>
-      <div className="stars">
-        {Array.from({ length: 5 }).map((_, index) =>
-          index < ranking ? <AiFillStar key={index} /> : <FiStar key={index} />,
-        )}
-      </div>
-      <p>
-        {description}
-      </p>
+      <Stars ranking={ranking} />
+      <p>{description}</p>
 
       {tags && (
         <Tag>

@@ -17,11 +17,13 @@ import { movies } from './mocks';
 import { Home } from './pages/home';
 import { SignIn } from './pages/signIn';
 import { SignOut } from './pages/signOut';
+import { Profile } from './pages/profile';
+import { MoviePreview } from './pages/moviePreview';
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <ThemeProvider theme={theme}>
       <GlobalStyles />
-      <Home />
+      <MoviePreview tags={['robert','tony']}/>
     </ThemeProvider>
   </React.StrictMode>,
 );
